@@ -24,7 +24,7 @@ def monty(stay=True):
     return remain_choice=='car'
 
 def main():
-    cycles = 5000000
+    cycles = 100000
     stay_wins   = 0
     change_wins = 0
     for i in range(cycles):
@@ -34,6 +34,7 @@ def main():
 
     percent_stay_wins = stay_wins*1.0/cycles
     percent_change_wins = change_wins*1.0/cycles
+    print 'number of cycles:    {} cycles'.format(cycles)
     print 'percent_stay_wins:   {}%'.format(percent_stay_wins)
     print 'percent_change_wins: {}%'.format(percent_change_wins)
 
